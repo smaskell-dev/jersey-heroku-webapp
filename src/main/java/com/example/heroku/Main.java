@@ -16,6 +16,7 @@ public class Main {
         if (webPort == null || webPort.isEmpty()) {
             webPort = "8080";
         }
+		System.out.println("Port: " + webPort);
 
         final Server server = new Server(Integer.valueOf(webPort));
         final WebAppContext root = new WebAppContext();
